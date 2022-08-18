@@ -1,0 +1,77 @@
+@mixin mq($value, $constraint: max, $feature: width) {
+	@media screen and (#{$constraint}-#{$feature}: $value + px) {
+		@content;
+	}
+}
+
+@mixin flexgrid($gap, $columns, $offset: 0) {
+	flex: 0 0 calc(#{100% / $columns} - #{$gap * ($columns - 1) / $columns});
+	max-width: calc(#{100% / $columns} - #{$gap * ($columns - 1) / $columns});
+	width: 100%;
+	margin-right: $gap;
+	margin-bottom: $gap;
+  
+	&:nth-child(#{$columns + $offset}n) {
+	  margin-right: 0;
+	}
+}
+
+@mixin clearfix() {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin hover-purple {
+	@media (min-width: 1025px) {
+		position: relative;
+
+		&::before {
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2px;
+			bottom: -6px;
+			left: 50%;
+			position: absolute;
+			background-color: $main-purple;
+			transition: width .2s ease 0s, left .2s ease 0s;
+			width: 0;
+		}
+	
+		&:hover {
+			&::before {
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+}
+
+@mixin hover-white {
+	@media (min-width: 1025px) {
+		position: relative;
+
+		&::before {
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2px;
+			bottom: -6px;
+			left: 50%;
+			position: absolute;
+			background-color: $white;
+			transition: width .2s ease 0s, left .2s ease 0s;
+			width: 0;
+		}
+	
+		&:hover {
+			&::before {
+				width: 100%;
+				left: 0;	
+			}
+		}
+    }
+}

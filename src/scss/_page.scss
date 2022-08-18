@@ -1,0 +1,37 @@
+.page {
+    margin: 41px 0;
+
+    @include mq(1024) {
+        margin: 41px 0;
+    }
+
+    @include mq(576) {
+        margin-bottom: 43px;
+    }
+}
+
+.page-title, .page-subtitle {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 12px;
+
+    @include mq(576) {
+        font-size: 28px;
+        margin-bottom: 17px;
+    }
+}
+
+.page-subtitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include mq(576) {
+        font-size: 16px;
+        padding: 0 11px;
+    }
+}

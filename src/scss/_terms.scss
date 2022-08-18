@@ -1,0 +1,58 @@
+.terms {
+    margin-bottom: 37px;
+
+    @include mq(1024) {
+        margin-bottom: 47px;
+    }
+}
+
+.rti__text-wrapper {
+    margin: 22px 0;
+
+    @include mq(576) {
+        margin: 42px 0;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.55;
+        color: $medium-grey;
+        margin-bottom: 26px;
+        max-width: 858px;
+        width: 100%;
+    
+        @include mq(1024) {
+            font-size: 18px;
+        }
+    
+        @include mq(576) {
+            font-size: 16px;
+        }
+    }
+
+    h4 {
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+    
+        @include mq(1024) {
+            font-size: 28px;
+        }
+    
+        @include mq(576) {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &:first-of-type {
+        @include mq(1024) {
+            margin-bottom: 80px;
+        }
+
+        @include mq(576) {
+            margin-bottom: 20px;
+        }
+    }
+}

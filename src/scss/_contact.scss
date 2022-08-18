@@ -1,0 +1,288 @@
+.contact {
+    @include mq(1024) {
+        margin-bottom: 110px;
+    }
+
+    @include mq(576) {
+        margin-bottom: 86px;
+    }
+}
+
+.contact__wrapper {
+    background-color: $white;
+    padding: 40px;
+    display: flex;
+    border-radius: 20px;
+
+    @include mq(1024) {
+        flex-direction: column-reverse;
+        position: relative;
+        padding-bottom: 320px;
+    }
+
+    @include mq(576) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 420px;
+    }
+}
+
+.contact__info {
+    padding: 37px 90px 37px 55px;
+    background-color: $main-purple;
+    color: $white;
+    border-radius: 20px;
+    margin-right: 50px;
+
+    @include mq(1024) {
+        padding-top: 40px;
+        margin-right: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: unset;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    @include mq(576) {
+        padding: 36px 20px 15px 30px;
+    }
+}
+
+.contact__info-wrapper {
+    @include mq(1024) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.contact__paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    opacity: 0.6;
+    max-width: 284px;
+    width: 100%;
+    margin-bottom: 37px;
+
+    @include mq(1024) {
+        font-size: 14px;
+        margin-bottom: 43px;
+    }
+} 
+
+.info-title {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    @include mq(1024) {
+        font-size: 22px;
+    }
+
+    @include mq(576) {
+        font-size: 18px;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+
+    @include mq(1024) {
+        margin-bottom: 44px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        
+        @include mq(1024) {
+            margin-right: 46px;
+        }
+    }
+
+    &:last-child {
+        @include mq(1024) {
+            margin-bottom: 44px;
+        }
+    }
+}
+
+.info-icon {
+    width: 30px;
+    line-height: 1.88;
+    background-color: $white;
+    text-align: center;
+    color: $main-purple;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.info-link, .info-item {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-link {
+    @include hover-white;
+}
+
+.form {
+    padding-top: 37px;
+
+    @include mq(576) {
+        padding-top: 15px;
+    }
+}
+
+.form__text-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(576) {
+        display: block;
+        margin-bottom: 80px;
+    }
+}
+
+.form__item {
+    flex-basis: calc(50% - 53px);
+    margin-bottom: 50px;
+
+    &:nth-child(odd) {
+        margin-right: 106px;
+
+        @include mq(576) {
+            margin-right: 0;
+        }
+    }
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: 1px solid $medium-grey;
+    outline: none;
+    font-size: 18px;
+    color: $main-purple;
+    line-height: 2;
+    &::placeholder {
+        color: $black;
+        opacity: 0.4;
+    }
+}
+
+.form__label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.form__message {
+    margin-bottom: 86px;
+
+    @include mq(1024) {
+        margin-bottom: 58px;
+    }
+}
+
+.form__button {
+    text-align: right;
+
+    @include mq(1024) {
+        margin-bottom: 63px;
+    }
+
+    @include mq(576) {
+        margin-top: 50px;
+    }
+}
+
+.checkbox__wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    @include mq(1024) {
+        margin-bottom: 20px;
+    }
+
+    @include mq(576) {
+        display: block;
+        margin-bottom: 75px;
+    }
+}
+
+.checkbox__label {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 31px;
+
+    &:not(:last-child) {
+        margin-right: 52px;
+    }
+
+    @include mq(576) {
+        margin-bottom: 16px;
+    }
+}
+
+.form__checkbox {
+    display: none;
+}
+
+.custom-radio {
+    width: 22px;
+    height: 22px;
+    border-radius: 20px;
+    border: 2px solid $medium-grey;
+    box-sizing: border-box;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: url(../../src/images/checkmark.svg);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 2px;
+        left: -2px;
+        transform: scale(0);
+        border-radius: 20px;
+    }
+}
+
+.form__checkbox:checked + .custom-radio::after{
+    transform: scale(1);
+}
+
+.form__label--message {
+    @include mq(576) {
+        margin-bottom: 34px;
+    }
+}
+
+.form__question {
+    color: $black;
+    margin-bottom: 22px;
+    font-weight: 500;
+
+    @include mq(576) {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+}
+
+.submit-button {
+    @include mq(576) {
+        width: 100%;
+    }
+}

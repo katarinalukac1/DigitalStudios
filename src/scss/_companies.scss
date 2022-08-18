@@ -1,0 +1,45 @@
+.companies {
+    text-align: center;
+    margin-bottom: 124px;
+    margin-top: 50px;
+
+    @include mq(576) {
+        margin-bottom: 50px;
+    }
+}
+
+.company {
+    margin-right: 63px;
+    margin-bottom: 20px;
+
+    &:nth-child(6) {
+        margin-right: 0;
+    }
+
+    @include mq(1024) {
+        margin-right: 24px;
+    }
+
+    @include mq(576) {
+        width: 38px;
+        height: 38px;
+        margin-right: 14px;
+    }
+}
+
+.companies__paragraph {
+    font-weight: 500;
+    margin-bottom: 36px;
+
+    @include mq(1024) {
+        padding: 0 25px;
+    }
+}
+
+.companies__title {
+    margin-bottom: 5px;
+
+    @include mq(1024) {
+        margin-bottom: 20px;
+    }
+}

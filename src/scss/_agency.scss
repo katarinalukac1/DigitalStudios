@@ -1,0 +1,78 @@
+.agency {
+    background-color: $article-grey;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+.agency__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include mq(576) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.agency__title {
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 1.37;
+    max-width: 520px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 29px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        right: -37px;
+        bottom: 0;
+        width: 3px;
+        height: 100%;
+        background-color: $border-grey;
+        position: absolute;
+
+        @include mq(1024) {
+            right: -25px;
+        }
+
+        @include mq(576) {
+            width: 132px;
+            height: 3px;
+            right: calc(50% - 66px);
+            bottom: -42px;
+        }
+    }
+
+    @include mq(1024) {
+        margin-right: 51px;
+        font-size: 28px;
+        max-width: 330px;
+    }
+
+    @include mq(576) {
+        font-size: 22px;
+        margin-right: 0;
+        padding: 0 13px;
+        margin-bottom: 80px;
+    }
+}
+
+.agency__paragraph {
+    @include mq(1024) {
+        font-size: 16px;
+        max-width: 353px;
+        width: 100%;
+    }
+
+    @include mq(576) {
+        font-size: 14px;
+        max-width: 345px;
+        margin: auto;
+    }
+}
+
+.agency__paragraph-about {
+    max-width: 620px;
+}

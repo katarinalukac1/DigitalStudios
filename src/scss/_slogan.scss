@@ -1,0 +1,105 @@
+.slogan {
+    padding-top: 52px;
+    padding-bottom: 36px;
+    border-bottom: 52px solid $light-blue;
+
+    @include mq(576) {
+        padding-bottom: 15px;
+    }
+}
+
+.slogan__wrapper {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: right;
+
+    @include mq(1024) {
+        background-position: center;
+        background-size: auto;
+    }
+
+    @include mq(576) {
+        padding-top: 0;
+    }
+}
+
+.slogan__mark {
+    background-color: $light-grey;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 12px;
+
+    @include mq(576) {
+        padding: 8px 27px 8px 8px;
+    }
+}
+
+.slogan__statistic {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include  mq(576) {
+        font-size: 14px;
+    }
+}
+
+.slogan__circle {
+    background-color: $yellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 24px;
+
+    @include mq(576) {
+        width: 33px;
+        height: 33px;
+        margin-right: 13px;
+    }
+}
+
+.slogan__title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+    max-width: 411px;
+    width: 100%;
+    margin: 20px 0 15px;
+
+    @include mq(576) {
+        font-size: 40px;
+        max-width: 250px;
+    }
+}
+
+.slogan__text {
+    max-width: 680px;
+    font-weight: 500;
+    margin-bottom: 52px;
+
+    @include mq(1024) {
+        max-width: 496px;
+    }
+}
+
+.slogan__link {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 18px;
+    position: relative;
+    color: $main-purple;
+
+    @include hover-purple;
+
+    @include mq(576) {
+        display: block;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}

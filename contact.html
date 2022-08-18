@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo"><img src="src/images/logo.svg" alt="logo"></a>
+                <nav class="navigation" id="header-navigation">
+                    <button class="button navigation__button"><span class="icon-arrow-right"></span>Start A New Project</button>
+                    <ul class="navigation__list">
+                        <li class="navigation__list-item"><a href="index.html" class="navigation__link">Home</a></li>
+                        <li class="navigation__list-item"><a href="404.html" class="navigation__link">Works</a></li>
+                        <li class="navigation__list-item"><a href="about.html" class="navigation__link">About us</a></li>
+                        <li class="navigation__list-item"><a href="contact.html" class="navigation__link">Contact us</a></li>
+                        <li class="navigation__list-item"><a href="services.html" class="navigation__link">Service</a></li>
+                        <li class="navigation__list-item"><a href="blogs.html" class="navigation__link">Blogs</a></li>
+                        <li class="navigation__list-item"><a href="terms.html" class="navigation__link">Terms & Conditions</a></li>
+                    </ul>
+                    <p class="paragraph social__paragraph">Follow us on</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link navigation__social-link"><span class="icon icon-instagram"></span></a>
+                        <a href="#" class="social-link navigation__social-link"><span class="icon icon-facebook"></span></a>
+                        <a href="#" class="social-link navigation__social-link"><span class="icon icon-linkedin"></span></a>
+                        <a href="#" class="social-link navigation__social-link"><span class="icon icon-twitter"></span></a>
+                        <a href="#" class="social-link navigation__social-link"><span class="icon icon-youtube"></span></a>
+                    </div>
+                </nav>
+                <div class="header__btns">
+                    <button class="button header__button">Connect with us</button>
+                    <button class="header__button-toggler" id="toggler"><span class="header__exit"></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">Enim egestas at massa senectus justo ut. Hac est.</p>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__info">
+                    <h5 class="info-title">Contact Information</h5>
+                    <p class="paragraph contact__paragraph">Fill up the form and our Team will get back to you within 24 hours.</p>
+                    <div class="contact__info-wrapper">
+                        <div class="info">
+                            <span class="info-icon icon-mobile-phone"></span>
+                            <span class="info-item info-link">+91 98765 43210</span>
+                        </div>
+                        <div class="info">
+                            <span class="info-icon icon-mail"></span>
+                            <a href="mailto:domain@paypal.com" class="info-link"><span class="info-item">domain@paypal.com</span></a>
+                        </div>
+                        <div class="info">
+                            <span class="info-icon icon-mobile-phone"></span>
+                            <a href="https://paypal.com" target="_blank" class="info-link"><span class="info-item">https://paypal.com</span></a>
+                        </div>
+                        <div class="info">
+                            <span class="info-icon icon-location"></span>
+                            <span class="info-item info-link">Location</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="form" method="post">
+                    <div class="form__text-group">
+                        <div class="form__item">
+                            <label for="name" class="form__label">First Name</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <label for="last name" class="form__label">Last Name</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <label for="email" class="form__label">Mail</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <label for="phone" class="form__label">Phone</label>
+                            <input type="text" class="form__input">
+                        </div>
+                    </div>
+                    <div class="form__checkbox-group">
+                        <p class="paragraph form__question">What service do you need?</p>
+                        <div class="checkbox__wrapper">
+                            <label class="checkbox__label">
+                                <input type="radio" class="form__checkbox" id="web" value="web" name="service">
+                                <div class="custom-radio"></div>
+                                Web Design
+                            </label>
+                            <label class="checkbox__label">
+                                <input type="radio" class="form__checkbox" id="app" value="app" checked name="service">
+                                <div class="custom-radio"></div>
+                                App Design
+                            </label>
+                            <label class="checkbox__label">
+                                <input type="radio" class="form__checkbox" id="graphic" value="graphic" name="service">
+                                <div class="custom-radio"></div>
+                                Graphic Design
+                            </label>
+                            <label class="checkbox__label">
+                                <input type="radio" class="form__checkbox" id="marketing" value="marketing" name="service">
+                                <div class="custom-radio"></div>
+                                Digital Marketing
+                            </label>
+                            <label class="checkbox__label">
+                                <input type="radio" class="form__checkbox" id="other" value="other" name="service">
+                                <div class="custom-radio"></div>
+                                Other
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="form__message">
+                        <label for="message" class="form__label form__label--message">Message</label>
+                        <input type="text" class="form__input" placeholder="Write your message...">
+                    </div>
+                    <div class="form__button">
+                        <button class="button submit-button" type="submit">Send Message</button>
+                    </div>      
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+            <div class="work__wrapper">
+                <h2 class="title work__title">See our work</h2>
+                <p class="paragraph work__paragraph">Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.</p>
+                <div class="work__images">
+                    <img src="src/images/mobile-1.svg" alt="mobile" class="work__image">
+                    <img src="src/images/mobile-2.svg" alt="mobile" class="work__image">
+                    <img src="src/images/mobile-3.svg" alt="mobile" class="work__image">
+                </div>
+                <button class="button work__button">See all projects</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper container container--footer">
+            <a href="#" class="footer__logo"><img src="src/images/logo-white.svg" alt=""></a>
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="#" class="footer__link">Works</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Services</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Contact us</a></li>
+                <li class="footer__list-item"><a href="#" class="footer__link">Carrers</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><span class="footer-icon icon-instagram"></span></a>
+                <a href="#" class="footer__social-link"><span class="footer-icon icon-facebook"></span></a>
+                <a href="#" class="footer__social-link"><span class="footer-icon icon-linkedin"></span></a>
+                <a href="#" class="footer__social-link"><span class="footer-icon icon-twitter"></span></a>
+                <a href="#" class="footer__social-link"><span class="footer-icon icon-youtube"></span></a>
+            </div>
+            <p class="footer__copyright">© 2022 Digital Studios • All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

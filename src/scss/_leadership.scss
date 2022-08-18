@@ -1,0 +1,75 @@
+.leadership {
+    text-align: center;
+    padding: 100px 0 90px;
+
+    @include mq(576) {
+        padding: 55px 0 30px;
+    }
+}
+
+.leadership__team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leadership__title {
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.leadership__paragraph {
+    font-weight: 500;
+    max-width: 929px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 57px;
+
+    @include mq(1024) {
+        max-width: 660px;
+        padding-bottom: 68px;
+    }
+}
+
+.leader {
+    flex-basis: 33.33%;
+    margin-bottom: 40px;
+
+    @include mq(576) {
+        flex-basis: 50%;
+        margin-bottom: 25px;
+    }
+}
+
+.leader-name {
+    margin: 20px 0 10px;
+    font-size: 24px;
+
+    @include mq(1024) {
+        font-size: 18px;
+    }
+
+    @include mq(576) {
+        font-size: 16px;
+        margin: 16px 0 5px;
+    }
+}
+
+.leader__paragraph {
+    font-weight: 500;
+
+    @include mq(1024) {
+        font-size: 14px;
+    }
+}
+
+.leader-img {
+    @include mq(1024) {
+        width: 113px;
+        height: 113px;
+    }
+
+    @include mq(576) {
+        width: 80px;
+        height: 80px;
+    }
+}

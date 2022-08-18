@@ -1,0 +1,114 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot?1648629639784');
+	src: url('../fonts/iconfont.eot?#iefix-1648629639784') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1648629639784') format('woff2'),
+		url('../fonts/iconfont.woff?1648629639784') format('woff'),
+		url('../fonts/iconfont.ttf?1648629639784') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+
+.icon-arrow-left::before {
+	content: '\ea01';
+}
+
+.icon-arrow-right::before {
+	content: '\ea02';
+}
+
+.icon-deliver::before {
+	content: '\ea03';
+}
+
+.icon-digital-marketing::before {
+	content: '\ea04';
+}
+
+.icon-discovery::before {
+	content: '\ea05';
+}
+
+.icon-execute::before {
+	content: '\ea06';
+}
+
+.icon-facebook::before {
+	content: '\ea07';
+}
+
+.icon-graphic::before {
+	content: '\ea08';
+}
+
+.icon-instagram::before {
+	content: '\ea09';
+}
+
+.icon-linkedin::before {
+	content: '\ea0a';
+}
+
+.icon-location::before {
+	content: '\ea0b';
+}
+
+.icon-mail::before {
+	content: '\ea0c';
+}
+
+.icon-mobile-app::before {
+	content: '\ea0d';
+}
+
+.icon-mobile-phone::before {
+	content: '\ea0e';
+}
+
+.icon-plan::before {
+	content: '\ea0f';
+}
+
+.icon-toggler::before {
+	content: '\ea10';
+}
+
+.icon-twitter::before {
+	content: '\ea11';
+}
+
+.icon-web::before {
+	content: '\ea12';
+}
+
+.icon-website::before {
+	content: '\ea13';
+}
+
+.icon-youtube::before {
+	content: '\ea14';
+}

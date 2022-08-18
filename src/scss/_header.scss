@@ -1,0 +1,156 @@
+.header {
+    box-shadow: 0 4px 40px $box-shadow;
+    padding-top: 27px;
+    padding-bottom: 28px;
+    background-color: $white;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__btns {
+    display: flex;
+    min-height: 52px;
+}
+
+.header__button {
+    min-height: 45.6px;
+    align-self: center;
+
+    @include mq(576) {
+        display: none;
+    }
+}
+
+.header__button-toggler {
+    background-image: url("../../src/images/toggler.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    background-color: $white;
+    border: none;
+    align-self: center;
+    margin-left: 78px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-image .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out, border-radius .3s ease-in-out, background-color .3s ease-in-out;
+
+    &.exit {
+        background-image: unset;
+        width: 52px;
+        height: 52px;
+        border-radius: 30px;
+        background-color: $exit-grey;
+        transition: background-color .2s ease;
+
+        &:hover {
+            background-color: $exit-hover;
+        }
+
+        @include mq(576) {
+            right: 20px;
+            width: 38px;
+            height: 38px;
+        }
+
+        .header__exit {
+            background-image: url("../../src/images/exit.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            margin: auto;
+            width: 19px;
+            height: 19px;
+
+            @include mq(576) {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
+
+.icon-toggler {
+    background-color: white;
+}
+
+.navigation {
+    padding: 30px 90px 40px 70px;
+    background-color: $white;
+    position: fixed;
+    right: -110%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 4px 4px 50px $medium-grey;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    transition: right .3s ease-in-out;
+
+    @media (min-width: 1700px) {
+        padding-right: 320px;
+    }
+
+    &.show {
+        right: 0;
+    }
+
+    @include mq(576) {
+        padding: 30px 88px 40px 30px;
+    }
+}
+
+.navigation__button {
+    margin-bottom: 65px;
+
+    @include mq(576) {
+        font-size: 16px !important;
+        padding-left: 15px;
+        padding-right: 16px;
+        margin-bottom: 50px;
+    }
+
+    span {
+        margin-right: 13px;
+
+        @include mq(576) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation__social-link {
+    @include mq(576) {
+        font-size: 16px !important;
+        padding: 7px 8px !important;
+        border-radius: 8px !important;
+        margin-right: 10px !important;
+    }
+}
+
+.navigation__list-item {
+    font-size: 36px;
+    margin-bottom: 40px;
+
+    @include mq(576) {
+        font-size: 24px;
+    }
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: $black;
+
+    @include hover-purple;
+}

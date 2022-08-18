@@ -1,0 +1,148 @@
+.ultimate-services {
+    margin: 92px 0 120px;
+
+    @include mq(1024) {
+        margin: 75px 0 110px;
+    }
+
+    @include mq(576) {
+        margin: 40px 0 90px;
+    }
+}
+
+.ultimate-services__wrapper {
+    display: flex;
+
+    @include mq(576) {
+        flex-direction: column-reverse;
+    }
+}
+
+.ultimate-services__content {
+    @include mq(1024) {
+        margin-right: 24px;
+    }
+
+    @include mq(576) {
+        margin-right: 0;
+    }
+}
+
+.ultimate-services__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 690px;
+    margin-bottom: 10px;
+
+    @include mq(1024) {
+        justify-content: space-between;
+    }
+
+    @include mq(576) {
+        margin: 0 25px 0 20px;
+    }
+}
+
+.ultimate-services__item {
+    flex-basis: 50%;
+    margin-bottom: 38px;
+
+    @include mq(1024) {
+        flex-basis: calc(50% - 20px);
+    }
+
+    @include mq(576) {
+        flex-basis: calc(50% - 25px);
+    }
+}
+
+.item-img {
+    margin-bottom: 30px;
+
+    @include mq(576) {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+}
+
+.item-subtitle {
+    text-transform: capitalize;
+    font-size: 22px;
+    color: $main-purple;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 12px;
+
+    @include mq(576) {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+}
+
+.ultimate-services__image-wrapper {
+    margin-top: 53px;
+
+    @include mq(1024) {
+        margin-top: 0;
+    }
+
+    @include mq(576) {
+        margin-bottom: 30px;
+    }
+}
+
+.ultimate-services__image {
+    width: 540px;
+    height: 840px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    @include mq(1024) {
+        width: 284px;
+        height: 425px;
+    }
+
+    @include mq(576) {
+        height: 180px;
+        width: 100%;
+    }
+}
+
+.ultimate-services__title {
+    max-width: 471px;
+    width: 100%;
+    text-transform: unset;
+    margin-bottom: 28px;
+
+    @include mq(576) {
+        margin-bottom: 16px;
+    }
+}
+
+.ultimate-services__paragraph {
+    max-width: 510px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 35px;
+
+    @include mq(1024) {
+        margin-bottom: 50px;
+    }
+
+    @include mq(576) {
+        margin-bottom: 33px;
+        max-width: 320px;
+    }
+}
+
+.item__paragraph {
+    max-width: 309px;
+    width: 100%;
+}
+
+.ultimate-services__button {
+    @include mq(576) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,133 @@
+.clients__wrapper {
+    display: flex;
+    margin-bottom: 170px;
+
+    @include mq(1024) {
+        margin-bottom: 114px;
+    }
+
+    @include mq(576) {
+        display: block;
+    }
+}
+
+.clients__content {
+    margin-left: 50px;
+
+    @include mq(576) {
+        margin-left: 0;
+    }
+}
+
+.clients__stars {
+    padding-bottom: 10px;
+
+    @include mq(576) {
+        width: 90px;
+    }
+}
+
+.clients__title {
+    max-width: 499px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+    @include mq(576) {
+        margin-bottom: 30px;
+        max-width: 330px;
+        font-size: 24px;
+    }
+}
+
+.clients__paragraph {
+    font-weight: 500;
+    margin-bottom: 28px;
+    max-width: 578px;
+    width: 100%;
+
+    @include mq(576) {
+        padding-right: 13px;
+    }
+}
+
+.clients__subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+
+    @include mq(576) {
+        margin-bottom: 14px;
+    }
+}
+
+.clients__image-wrapper {
+    @include mq(1024) {
+        place-self: center;
+    }
+
+    @include mq(576) {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.clients__image {
+    @include mq(1024) {
+        width: 244px;
+    }
+}
+
+.clients__cloudexter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cloudexter__content {
+    display: flex;
+    width: 170px;
+}
+
+.cloudexter__img {
+    margin-right: 15px;
+}
+
+.cloudexter__name-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.cloudexter__job-title {
+    color: $medium-grey;
+}
+
+.navigation-left, .navigation-right {
+    border: 0;
+    background-color: $border-grey;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 2.22;
+    padding: 0 11px;
+    cursor: pointer;
+    transition: background-color .2s ease;
+
+    &:hover {
+        background-color: $medium-grey;
+    }
+}
+
+.navigation-left {
+    margin-right: 105px;
+
+    @include mq(1024) {
+        margin-right: 65px;
+    }
+
+    @include mq(576) {
+        margin-right: 20px;
+    }
+}
